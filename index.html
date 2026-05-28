@@ -129,19 +129,41 @@
 
 <form action="https://formspree.io/f/mredjkdw" method="POST">
   
-  <input type="text" name="name" placeholder="Your Name" required>
+  <section id="contact" class="contact">
+  <h2>Contact / Request Quote</h2>
 
-  <input type="text" name="school" placeholder="School / Institution Name" required>
+  <!-- Success message -->
+  <div id="success-message" style="display:none; padding:15px; background:#d4edda; color:#155724; border-radius:5px; margin-bottom:15px;">
+    ✅ Your request has been sent successfully! We will contact you soon.
+  </div>
 
-  <input type="email" name="email" placeholder="Email Address" required>
+  <form action="https://formspree.io/f/mredjkdw" method="POST">
 
-  <input type="text" name="phone" placeholder="Phone Number">
+    <!-- Formspree settings -->
+    <input type="hidden" name="_subject" value="New SchoolSan Request">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://nwabie14-byte.github.io/School-San-Solutions/#success">
 
-  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <input type="text" name="name" placeholder="Your Name" required>
 
-  <button class="btn" type="submit">Send Request</button>
+    <input type="text" name="school" placeholder="School / Institution Name" required>
 
-</form>
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="text" name="phone" placeholder="Phone Number">
+
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <button class="btn" type="submit">Send Request</button>
+  </form>
+
+  <br>
+
+  <!-- WhatsApp button -->
+  <a class="btn" href="https://wa.me/27829664902" target="_blank" style="background: green;">
+    Chat on WhatsApp
+  </a>
+</section>
   </section>
 
   <footer>
